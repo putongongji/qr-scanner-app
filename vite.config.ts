@@ -5,6 +5,7 @@ import { traeBadgePlugin } from 'vite-plugin-trae-solo-badge';
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: process.env.NODE_ENV === 'production' ? '/serial-number-scanner/' : '/',
   server: {
     host: '0.0.0.0',
     port: 5173,
@@ -12,6 +13,7 @@ export default defineConfig({
   },
   build: {
     sourcemap: 'hidden',
+    outDir: 'dist',
   },
   plugins: [
     react({
