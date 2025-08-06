@@ -5,7 +5,7 @@ import { traeBadgePlugin } from 'vite-plugin-trae-solo-badge';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/serial-number-scanner/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/qr-scanner-app/' : '/',
   server: {
     host: '0.0.0.0',
     port: 5173,
